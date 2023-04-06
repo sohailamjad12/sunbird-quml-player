@@ -62,6 +62,7 @@ export interface Config {
     showDeviceOrientation?: boolean;
     showLegend?: boolean;
     shuffleOptions?: boolean;
+    navigation?: any; 
 }
 
 export interface QumlPlayerConfig {

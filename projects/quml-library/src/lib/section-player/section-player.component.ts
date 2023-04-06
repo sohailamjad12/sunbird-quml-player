@@ -63,6 +63,7 @@ export class SectionPlayerComponent implements OnChanges, AfterViewInit {
   endPageReached: boolean;
   tryAgainClicked = false;
   currentOptionSelected: any;
+  navigationType:any = {};
   carouselConfig = {
     NEXT: 1,
     PREV: 2
@@ -204,6 +205,8 @@ export class SectionPlayerComponent implements OnChanges, AfterViewInit {
 
     
     this.shuffleOptions=this.sectionConfig.config?.shuffleOptions;
+     this.navigationType = this.sectionConfig.config?.navigation;
+     console.log(this.sectionConfig.config)
     this.isShuffleQuestions = this.sectionConfig.metadata.shuffle;
     this.noOfQuestions = this.questionIds.length;
     this.viewerService.initialize(this.sectionConfig, this.threshold, this.questionIds, this.parentConfig);

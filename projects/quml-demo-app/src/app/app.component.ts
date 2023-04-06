@@ -10,7 +10,9 @@ import { DataService } from './services/data.service';
 export class AppComponent implements OnInit {
   contentId = 'do_213484313936035840138';
   playerConfig: any;
-
+  navigation= {
+    type:"text"
+  }
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
@@ -24,7 +26,7 @@ export class AppComponent implements OnInit {
     let config;
     if (qumlConfigMetadata) {
       qumlConfigMetadata = JSON.parse(qumlConfigMetadata);
-      config = { ...samplePlayerConfig.config, ...qumlConfigMetadata };
+      config = { ...samplePlayerConfig.config, ...qumlConfigMetadata, navigation: this.navigation};
     }
     this.playerConfig = {
       context: samplePlayerConfig.context,
