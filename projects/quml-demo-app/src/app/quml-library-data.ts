@@ -545,7 +545,7 @@ export const samplePlayerConfig = {
             'showShare': true,
             'showDownload': true,
             'showReplay': false,
-            'showExit': false,
+            'showExit': true,
         },
         nextContent: { name: 'Roti aur Kutta', identifier: 'do_231234332232' },
         showDeviceOrientation: true,

@@ -104,7 +104,9 @@
       -webkit-transform: translate(-50%, -50%) rotate(-45deg);
     }
   }
-
+  .nxtbtn{
+    padding: 5% 12%;
+  }
   &__previous {
     &::after {
       transform: translate(-50%, -50%) rotate(135deg);
